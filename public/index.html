@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "echarts": "/dist/echarts.esm.js"
+        }
+      }
+    </script>
+    <title>Charting 🛫</title>
+  </head>
+  <body>
+    <h1>Charting 🛫</h1>
+    <p>Go HTTP server with a simple HTML page.</p>
+
+    <main>
+      <header class="action-bar">
+        <button id="start-stop-btn">
+          <i class="fa fa-stop"></i>
+        </button>
+        <span>
+          <label for="theme">Choose a theme:</label>
+          <select name="theme" id="theme">
+            <option value="default">default</option>
+            <option value="essos">essos</option>
+            <option value="infographic">infographic</option>
+            <option value="purple-passion">purple-passion</option>
+            <option value="v5">v5</option>
+            <option value="vintage">vintage</option>
+            <option value="wonderland" selected>wonderland</option>
+          </select>
+        </span>
+      </header>
+      <div id="main" class="chart-container"></div>
+    </main>
+  </body>
+
+  <script src="./src/index.js" type="module"></script>
+</html>
